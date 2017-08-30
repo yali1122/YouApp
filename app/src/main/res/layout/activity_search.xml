@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.ahsan.youtube.search"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+       app:srcCompat="@mipmap/video"
+       android:id="@+id/imageView2" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Song name"
+            android:id="@+id/search"
+            />
+     </android.support.design.widget.TextInputLayout>
+
+
+     <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Enter number of Video are show"
+            android:ems="10"
+            android:id="@+id/value" />
+     </android.support.design.widget.TextInputLayout>
+
+
+    <ImageButton
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/colorPrimaryDark"
+       app:srcCompat="@android:drawable/ic_menu_search"
+       android:id="@+id/btn_search"
+       android:layout_marginTop="40dp"
+        android:layout_weight="0.12" />
+
+</LinearLayout>
